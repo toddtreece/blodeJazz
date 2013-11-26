@@ -1,0 +1,27 @@
+{
+  "name": "blodeJazz",
+  "version": "0.0.1",
+  "description": "blode triggered jazz generation system",
+  "main": "jazz",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/toddtreece/blodeJazz.git"
+  },
+  "keywords": [
+    "blode",
+    "jazz",
+    "node.js"
+  ],
+  "author": "Todd Treece <todd@uniontownlabs.org>",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/toddtreece/blodeJazz/issues"
+  },
+  "homepage": "https://github.com/toddtreece/blodeJazz",
+  "dependencies": {
+    "midi": "~0.7.0"
+  }
+}
