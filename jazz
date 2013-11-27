@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var Progression = require('./lib/progression.js'),
+    Listener = require('./lib/listener.js'),
+    root = process.argv[2],
+    sequence = process.argv[3];
+
+if(typeof root == 'undefined' || typeof sequence == 'undefined') {
+  console.log('You must provide a key and progression');
+  process.exit(0);
+}
+
+var progression = Progression(root, sequence),
+    listener = Listener();
+
+listener.connect('10.10.10.2', 8001);
+
+listener.event.on('chord', function() {
+
+  progression.advance();
+
+  progression.chord();
+  progression.bass();
+
+});
+
+listener.event.on('bass', function() {
+  progression.bass();
+});
+
+listener.event.on('solo', function() {
+  progression.solo();
+});
+
