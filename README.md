@@ -20,7 +20,7 @@ $ cd blodeJazz
 $ npm install
 $ ./jazz C II,V,I
 ````
-As you can see above, the ````jazz```` executable accepts two arguments.  The musical key, and the chord progression.
+As you can see above, the ````jazz```` executable accepts two arguments: the musical key, and the chord progression.  Once you launch it, a virtual MIDI port will be created called ````blodeJazz````.
 
 ## Modifying
 
